@@ -3,10 +3,6 @@
     display: flex;
 }
 
-.beside{
-    width: 50%;
-}
-
 .my-grid{
     height: 400px;
     display: grid;
