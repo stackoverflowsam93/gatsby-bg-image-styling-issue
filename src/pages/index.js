@@ -56,15 +56,15 @@ const IndexPage = () => {
         </div>
 
 
-        
+
         <div className='container'>
           <div style={{width:'50%'}}>
-            some text
+            50% of screen, the grid div should probably autocomplete to be the size of the other 50%, but it only does when the textsize isn't 0.8em
           </div>
           <div className='my-grid'>
-            <BgImage className='un' textClass='big' imgProps={imgProps} />
-            <BgImage className='du' textClass='big' imgProps={imgProps} />
-            <BgImage className='twa' textClass='big' imgProps={imgProps} />
+            <BgImage className='un' textClass='small' imgProps={imgProps} />
+            <BgImage className='du' textClass='small' imgProps={imgProps} />
+            <BgImage className='twa' textClass='small' imgProps={imgProps} />
           </div>
         </div>
       </>
