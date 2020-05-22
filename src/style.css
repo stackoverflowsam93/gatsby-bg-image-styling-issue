@@ -8,24 +8,16 @@
 }
 
 .my-grid{
-        height: 400px;
-        display: grid;
-        grid-template: repeat(3, 1fr) / repeat(4, 1fr);
-        grid-template-areas:
-            "u b b a"
-            "d b b a"
-            "t c s a";
-        grid-gap: 10px;
-
-
-        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
-        grid-template-areas:
-            "u u"
-            "u u"
-            "d t";
-            
-        width: auto;
-        padding: 20px;
+    height: 400px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    grid-template-areas:
+        "u u"
+        "u u"
+        "d t";            
+    width: auto;
+    padding: 20px;
 }
 
 .un{
@@ -40,16 +32,18 @@
     grid-area: t;
 }
 
-
-
 .bgImage{
     width: 100%;
     height: 100%;
 }
 
-.articleTitle{
+.small{
     margin-top: auto;
     font-size: 0.8em;
+}
+
+.big{
+    margin-top: auto;
 }
 
 .outer{

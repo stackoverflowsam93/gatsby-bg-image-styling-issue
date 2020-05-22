@@ -3,7 +3,7 @@ import { Link, graphql, useStaticQuery } from "gatsby"
 import BackgroundImage from 'gatsby-background-image'
 import '../style.css'
 
-const BgImage = ({className, imgProps}) => (
+const BgImage = ({className, imgProps, textClass}) => (
   <Link className={className} to='#'>
     <BackgroundImage
       Tag="section"
@@ -13,7 +13,7 @@ const BgImage = ({className, imgProps}) => (
       backgroundColor={`#040e18`}
     >
       <div className='outer'>
-        <h2 className='articleTitle'>Some words here</h2>
+        <h2 className={textClass}>How was the math test?</h2>
       </div>
     </BackgroundImage>
   </Link>
@@ -42,11 +42,15 @@ const IndexPage = () => {
 
     return (
       <div className='container'>
-        <div className='beside'>Some text</div>
         <div className='my-grid'>
-          <BgImage className='un' imgProps={imgProps} />
-          <BgImage className='du' imgProps={imgProps} />
-          <BgImage className='twa' imgProps={imgProps} />
+          <BgImage className='un' textClass='small' imgProps={imgProps} />
+          <BgImage className='du' textClass='small' imgProps={imgProps} />
+          <BgImage className='twa' textClass='small' imgProps={imgProps} />
+        </div>
+        <div className='my-grid'>
+          <BgImage className='un' textClass='big' imgProps={imgProps} />
+          <BgImage className='du' textClass='big' imgProps={imgProps} />
+          <BgImage className='twa' textClass='big' imgProps={imgProps} />
         </div>
       </div>
     )
