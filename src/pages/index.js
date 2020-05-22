@@ -41,18 +41,33 @@ const IndexPage = () => {
     const imgProps = data.allImageSharp.edges[2].node.fluid
 
     return (
-      <div className='container'>
-        <div className='my-grid'>
-          <BgImage className='un' textClass='small' imgProps={imgProps} />
-          <BgImage className='du' textClass='small' imgProps={imgProps} />
-          <BgImage className='twa' textClass='small' imgProps={imgProps} />
+      <>
+        <div className='container'>
+          <div className='my-grid'>
+            <BgImage className='un' textClass='small' imgProps={imgProps} />
+            <BgImage className='du' textClass='small' imgProps={imgProps} />
+            <BgImage className='twa' textClass='small' imgProps={imgProps} />
+          </div>
+          <div className='my-grid'>
+            <BgImage className='un' textClass='big' imgProps={imgProps} />
+            <BgImage className='du' textClass='big' imgProps={imgProps} />
+            <BgImage className='twa' textClass='big' imgProps={imgProps} />
+          </div>
         </div>
-        <div className='my-grid'>
-          <BgImage className='un' textClass='big' imgProps={imgProps} />
-          <BgImage className='du' textClass='big' imgProps={imgProps} />
-          <BgImage className='twa' textClass='big' imgProps={imgProps} />
+
+
+        
+        <div className='container'>
+          <div style={{width:'50%'}}>
+            some text
+          </div>
+          <div className='my-grid'>
+            <BgImage className='un' textClass='big' imgProps={imgProps} />
+            <BgImage className='du' textClass='big' imgProps={imgProps} />
+            <BgImage className='twa' textClass='big' imgProps={imgProps} />
+          </div>
         </div>
-      </div>
+      </>
     )
 }
 
