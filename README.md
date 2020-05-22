@@ -1,4 +1,7 @@
     cd temp
+
+then
+
     yarn install 
 
 or 
